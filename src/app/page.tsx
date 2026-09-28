@@ -1,69 +1,46 @@
 import Image from "next/image";
 
+const services = [
+  { id: "talent", number: "01", icon: "◎", title: "Talent & staffing", description: "Connect your business with the right people, wherever your next opportunity takes you.", items: ["Onshore recruitment", "Offshore recruitment", "Staffing solutions"], summary: "Explore talent solutions", details: "Bring your hiring priorities, role requirements, and preferred working model. NRE helps connect your business with talent aligned to your goals." },
+  { id: "strategy", number: "02", icon: "◈", title: "Strategy & consulting", description: "Turn complex business challenges into a clear direction for your next phase of growth.", items: ["Business strategy", "Data analytics", "Startup & innovation"], summary: "Explore consulting", details: "Build clarity around business priorities, understand what your data is telling you, and explore practical paths from an early idea to your next stage." },
+  { id: "digital", number: "03", icon: "↗", title: "Digital & technology", description: "Strengthen your digital presence and the technology that helps your business run.", items: ["Digital marketing", "E-commerce platforms", "Tech support assistance"], summary: "Explore digital solutions", details: "Connect marketing, online commerce, and technical support around your business needs—with a focus on visibility, customer experience, and day-to-day operations." },
+];
+
+const approachSteps = [
+  { label: "01 / UNDERSTAND", title: "Start with your business.", description: "Your challenges, your ambitions, your context. That’s where the conversation begins." },
+  { label: "02 / CONNECT", title: "Bring the right pieces together.", description: "Align people, business thinking, and digital capabilities around what you need." },
+  { label: "03 / GROW", title: "Build for what comes next.", description: "Focus on sustainable opportunities and relationships that grow with your business." },
+];
+
+function Brand() {
+  return (
+    <a className="flex shrink-0 items-center gap-3 leading-tight" href="#" aria-label="NRE TechOne Solutions home">
+      <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full min-[701px]:h-[62px] min-[701px]:w-[62px]"><Image className="absolute left-[-25.588%] top-[-51.471%] h-auto w-[150.588%] max-w-none" src="/assets/nre-logo.jpeg" alt="NRE" width={94} height={94} priority /></span>
+      <span className="font-[Manrope,sans-serif] text-sm font-semibold tracking-[-0.45px] min-[701px]:text-lg">TechOne Solutions<small className="mt-1 block font-['DM_Sans',sans-serif] text-[7px] font-normal tracking-[0.7px] text-[#e5be70] min-[1101px]:text-[8px] min-[1101px]:tracking-[1.2px]">TECHNOLOGY · COMMERCE · INNOVATION</small></span>
+    </a>
+  );
+}
+
+function Eyebrow({ children, dot = false }: { children: React.ReactNode; dot?: boolean }) {
+  return <p className="mb-5 text-[10px] font-semibold tracking-[1.4px] text-[#e5be70] min-[701px]:mb-[27px] min-[701px]:text-xs min-[701px]:tracking-[1.8px]">{dot && <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-[#e5be70]" />}{children}</p>;
+}
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <a className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus:bg-[#e5be70] focus:p-3 focus:text-[#161914]" href="#main">Skip to content</a>
+      <header className="mx-auto flex h-[90px] w-[calc(100%-40px)] items-center justify-between gap-4 border-b border-[#363933] min-[701px]:h-[110px] min-[701px]:w-[calc(100%-112px)] min-[701px]:gap-6 min-[1321px]:max-w-[1320px]"><Brand /><nav className="hidden items-center gap-[18px] text-sm text-[#c5c8c0] min-[701px]:flex min-[1101px]:gap-[34px]" aria-label="Main navigation"><a className="transition-colors hover:text-[#e5be70]" href="#services">Our expertise</a><a className="transition-colors hover:text-[#e5be70]" href="#about">About NRE</a><a className="transition-colors hover:text-[#e5be70]" href="#approach">Our approach</a></nav><a className="border-b border-[#e5be70] py-2 text-xs min-[701px]:text-sm" href="#services">Find your solution <span className="ml-3 text-[#e5be70] min-[701px]:ml-6">↗</span></a></header>
+      <main id="main">
+        <section className="mx-auto grid w-[calc(100%-40px)] gap-8 py-12 min-[701px]:w-[calc(100%-112px)] min-[701px]:grid-cols-[1.2fr_1fr] min-[701px]:gap-[65px] min-[701px]:py-[66px_62px] min-[1321px]:max-w-[1320px]"><div><Eyebrow dot>ROOTED IN INDIA. CONNECTED WORLDWIDE.</Eyebrow><h1 className="mb-6 font-[Manrope,sans-serif] text-[clamp(40px,4.4vw,66px)] font-medium leading-[1.15] tracking-[-2.9px]">The right people.<br />The right strategy.<br /><em className="not-italic text-[#e5be70]">Your next chapter.</em></h1><p className="mb-8 max-w-[510px] text-[17px] leading-[1.8] text-[#a9ada7]">Ambitious businesses need more than one solution. We bring talent, consulting, and digital expertise together to help you move forward.</p><a className="mr-7 inline-flex items-center gap-7 bg-[#e5be70] px-6 py-4 text-[#161914] transition-transform hover:-translate-y-0.5" href="#services">Explore our expertise <span>↗</span></a><a className="inline-flex items-center gap-3 border-b border-[#e5be70] pb-1 text-sm hover:text-[#e5be70]" href="#about">Meet NRE <span>→</span></a><div className="mt-16 flex items-center gap-3 text-[10px] font-semibold tracking-[1.8px] text-[#a9ada7] min-[701px]:mt-24"><span>TECHNOLOGY</span><i>/</i><span>COMMERCE</span><i>/</i><span>INNOVATION</span></div></div>
+          <aside className="self-center border border-[#4a4434] border-t-[3px] border-t-[#e5be70] bg-[#1a1d18] p-6 min-[701px]:p-[33px_30px_24px]" aria-label="NRE services"><Eyebrow>ONE PLATFORM. MULTIPLE SOLUTIONS.</Eyebrow><h2 className="mb-7 font-[Manrope,sans-serif] text-[31px] font-medium leading-[1.25] min-[1101px]:text-[35px]">What’s next<br />for your business?</h2><div>{[["01", "Build your team", "Staffing & recruitment", "talent"], ["02", "Find your direction", "Strategy, analytics & consulting", "strategy"], ["03", "Grow your digital presence", "Marketing, commerce & technology", "digital"]].map(([number, title, subtitle, id]) => <a className="flex items-start gap-4 border-t border-[#3e4238] py-5 transition-colors hover:text-[#e5be70]" href={`#${id}`} key={id}><span className="pt-1 text-[11px] text-[#e5be70]">{number}</span><span><strong className="block text-[17px] font-medium leading-[1.4]">{title}</strong><small className="mt-1 block text-[13px] text-[#a9ada7]">{subtitle}</small></span><span className="ml-auto text-[21px] text-[#e5be70]">↗</span></a>)}</div><p className="mt-2 border-t border-[#3e4238] pt-4 text-[11px] tracking-[1px] text-[#a9ada7]">Connected expertise. Shared ambition.</p></aside>
+        </section>
+        <div className="border-y border-[#363933] bg-[#171917] py-4 text-center text-[10px] font-semibold tracking-[1.8px] text-[#a9ada7] min-[701px]:py-5"><div className="mx-auto flex w-[calc(100%-40px)] flex-wrap items-center justify-center gap-4 min-[701px]:w-[calc(100%-112px)] min-[701px]:justify-between min-[1321px]:max-w-[1320px]"><span>People-first thinking</span><span className="text-[#e5be70]">✳</span><span>Business-led strategy</span><span className="text-[#e5be70]">✳</span><span>Digital possibilities</span><span className="text-[#e5be70]">✳</span><span>Global perspective</span></div></div>
+        <section className="mx-auto w-[calc(100%-40px)] py-20 min-[701px]:w-[calc(100%-112px)] min-[1321px]:max-w-[1320px]" id="services"><div className="mb-12 flex flex-col justify-between gap-6 min-[701px]:flex-row"><div><Eyebrow>01 — OUR EXPERTISE</Eyebrow><h2 className="font-[Manrope,sans-serif] text-3xl font-medium leading-[1.25] min-[701px]:text-[42px]">Different challenges.<br />One committed partner.</h2></div><p className="max-w-[380px] text-[#a9ada7]">Build your team. Sharpen your strategy. Grow your presence. Find the support for your next step.</p></div><div className="grid gap-5 min-[701px]:grid-cols-3">{services.map((service) => <article className="border border-[#363933] bg-[#1a1c1b] p-6 transition-colors target:border-[#e5be70] min-[701px]:p-8" id={service.id} key={service.id}><div className="mb-10 flex justify-between text-[#a9ada7]"><span className="text-3xl text-[#e5be70]">{service.icon}</span><span>{service.number}</span></div><h3 className="mb-4 font-[Manrope,sans-serif] text-2xl font-medium">{service.title}</h3><p className="mb-6 text-[#a9ada7]">{service.description}</p><ul className="mb-8 space-y-2 border-t border-[#363933] pt-5 text-sm text-[#c5c8c0]">{service.items.map((item) => <li key={item}>+ {item}</li>)}</ul><details><summary className="cursor-pointer list-none border-t border-[#363933] pt-4 text-sm text-[#e5be70]">{service.summary} <span className="float-right">↗</span></summary><p className="pt-4 text-sm text-[#a9ada7]">{service.details}</p></details></article>)}</div></section>
+        <section className="border-y border-[#363933] bg-[#171917] py-20" id="about"><div className="mx-auto grid w-[calc(100%-40px)] gap-10 min-[701px]:w-[calc(100%-112px)] min-[701px]:grid-cols-2 min-[701px]:gap-24 min-[1321px]:max-w-[1320px]"><div><Eyebrow>02 — GET TO KNOW NRE</Eyebrow><h2 className="font-[Manrope,sans-serif] text-3xl font-medium leading-[1.25] min-[701px]:text-[42px]">Built on ambition.<br />Growing through<br /><em className="not-italic text-[#e5be70]">partnership.</em></h2></div><div><p className="mb-7 font-[Manrope,sans-serif] text-2xl leading-[1.4]">We’re a growing startup with a simple belief: the right connections create new possibilities.</p><p className="text-[#a9ada7]">NRE TechOne Solutions brings staffing, consulting, and digital marketing together under one roof. With operations in India and worldwide, we connect businesses with the people, strategies, and digital edge to fuel growth and innovation.</p><div className="mt-8 grid gap-3 border-t border-[#363933] pt-6 text-sm text-[#e5be70]"><span>Trust at the foundation</span><span>Innovation in the thinking</span><span>Long-term relationships</span></div></div></div></section>
+        <section className="mx-auto w-[calc(100%-40px)] py-20 min-[701px]:w-[calc(100%-112px)] min-[1321px]:max-w-[1320px]" id="approach"><div className="mb-12 flex flex-col justify-between gap-6 min-[701px]:flex-row"><div><Eyebrow>03 — OUR APPROACH</Eyebrow><h2 className="font-[Manrope,sans-serif] text-3xl font-medium leading-[1.25] min-[701px]:text-[42px]">Your goals set<br />the direction.</h2></div><p className="max-w-[380px] text-[#a9ada7]">Thoughtful solutions start with understanding your business and what success means to you.</p></div><div className="grid gap-8 min-[701px]:grid-cols-3">{approachSteps.map((step) => <article className="border-t border-[#363933] pt-5" key={step.label}><span className="text-xs tracking-[1.5px] text-[#e5be70]">{step.label}</span><h3 className="my-5 font-[Manrope,sans-serif] text-xl font-medium">{step.title}</h3><p className="text-[#a9ada7]">{step.description}</p></article>)}</div></section>
+        <section className="mx-auto w-[calc(100%-40px)] border-t border-[#363933] py-20 min-[701px]:w-[calc(100%-112px)] min-[1321px]:max-w-[1320px]"><Eyebrow>PEOPLE. POSSIBILITIES. PROGRESS.</Eyebrow><h2 className="mb-8 font-[Manrope,sans-serif] text-3xl font-medium leading-[1.25] min-[701px]:text-[42px]">Your next chapter<br />starts with the <em className="not-italic text-[#e5be70]">right partner.</em></h2><a className="inline-flex items-center gap-7 bg-[#e5be70] px-6 py-4 text-[#161914] transition-transform hover:-translate-y-0.5" href="#services">Discover what we can do <span>↗</span></a></section>
       </main>
-    </div>
+      <footer className="mx-auto flex w-[calc(100%-40px)] flex-col gap-5 border-t border-[#363933] py-8 text-sm text-[#a9ada7] min-[701px]:w-[calc(100%-112px)] min-[701px]:flex-row min-[701px]:items-center min-[701px]:justify-between min-[1321px]:max-w-[1320px]"><Brand /><p>One platform. Multiple solutions.</p><span>© 2026 NRE TechOne Solutions</span></footer>
+    </>
   );
 }
