@@ -15,4 +15,6 @@ Open [http://localhost:3000](http://localhost:3000). Run `npm run build` and `np
 
 The contact panel links to `info@nretech.com` and `320 154 1558` as provided by NRE. The phone number has no country code, so its `tel:` link uses the supplied digits only.
 
-The logo asset is in `public/assets/nre-logo.jpeg`. The page has original copy and uses the supplied reference site's broad service and technology categories as inspiration. Confirm that every listed service and technology reflects NRE's actual capabilities before publishing. The decorative hero artwork is made with CSS and contains no external image dependency.
+The logo asset is in `public/assets/nre-logo.jpeg`. The page has original copy and uses the supplied reference site's broad service and technology categories as inspiration. Confirm that every listed service and technology reflects NRE's actual capabilities before publishing.
+
+The generated editorial photographs in `public/assets/team-collaboration.webp` and `public/assets/mobile-design-session.webp` illustrate the type of work NRE offers. They are not photographs of NRE staff or client projects. The hero uses a gentle image scale and floating labels, with animations disabled for visitors who prefer reduced motion.
