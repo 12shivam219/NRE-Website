@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NRE TechOne Solutions — People. Strategy. Digital growth.",
+  title: "NRE TechOne Solutions | People, Strategy & Digital Growth",
   description:
     "NRE connects businesses with talent, consulting, digital marketing and technology solutions in India and worldwide.",
 };
