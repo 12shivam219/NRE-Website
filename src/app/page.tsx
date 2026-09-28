@@ -16,7 +16,7 @@ function Brand() {
   return (
     <a className="flex shrink-0 items-center gap-3 leading-tight" href="#" aria-label="NRE TechOne Solutions home">
       <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full min-[701px]:h-[62px] min-[701px]:w-[62px]"><Image className="absolute left-[-25.588%] top-[-51.471%] h-auto w-[150.588%] max-w-none" src="/assets/nre-logo.jpeg" alt="NRE" width={94} height={94} priority /></span>
-      <span className="font-[Manrope,sans-serif] text-sm font-semibold tracking-[-0.45px] min-[701px]:text-lg">TechOne Solutions<small className="mt-1 block font-['DM_Sans',sans-serif] text-[7px] font-normal tracking-[0.7px] text-[#e5be70] min-[1101px]:text-[8px] min-[1101px]:tracking-[1.2px]">TECHNOLOGY · COMMERCE · INNOVATION</small></span>
+      <span className="font-[Manrope,sans-serif] text-sm font-semibold tracking-[-0.45px] min-[701px]:text-lg">NRE TechOne Solutions<small className="mt-1 block font-['DM_Sans',sans-serif] text-[7px] font-normal tracking-[0.7px] text-[#e5be70] min-[1101px]:text-[8px] min-[1101px]:tracking-[1.2px]">TECHNOLOGY · COMMERCE · INNOVATION</small></span>
     </a>
   );
 }
