@@ -11,8 +11,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). Run `npm run build` and `npm run lint` before release.
 
-## Before publishing
+## Contact
 
-The contact panel deliberately does not display an invented email address or submit to an unconfigured endpoint. Replace the note in `src/app/page.tsx` with NRE's verified contact details or wire a form to an approved destination before using the page to collect inquiries.
+The contact panel links to `info@nretech.com` and `320 154 1558` as provided by NRE. The phone number has no country code, so its `tel:` link uses the supplied digits only.
 
 The logo asset is in `public/assets/nre-logo.jpeg`. The page uses the company's existing service descriptions as its content basis. The decorative hero artwork is made with CSS and contains no external image dependency.
