@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NRE TechOne Solutions | People, Strategy & Digital Growth",
+  title: "NRE TechOne Solutions | Software, Mobile Apps & IT Services",
   description:
-    "NRE connects businesses with talent, consulting, digital marketing and technology solutions in India and worldwide.",
+    "NRE develops custom software, mobile applications and web experiences, and supports businesses with IT staffing, consulting and digital marketing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
