@@ -1,8 +1,6 @@
 export const contact = {
   email: "info@nretechone.com",
-  location: "Bhopal, Madhya Pradesh, India",
-  whatsappDisplay: "+91 9340783663",
-  whatsappUrl: "https://wa.me/919340783663",
+  location: "Wyoming, WY, USA",
 };
 
 export const nav = [

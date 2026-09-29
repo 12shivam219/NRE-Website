@@ -3,7 +3,7 @@ import Link from "next/link";
 import { contact, nav } from "@/lib/site";
 
 function Logo() {
-  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><span className="brand-mark"><Image src="/assets/nre-logo.jpeg" alt="" width={80} height={80} priority /></span><span className="brand-name"><strong>NRE<span>.</span></strong><small>TECHONE SOLUTIONS</small></span></Link>;
+  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><span className="brand-mark"><Image src="/assets/nre-client-logo.webp" alt="" width={80} height={80} priority /></span><span className="brand-name"><strong>NRE<span>.</span></strong><small>TECHONE SOLUTIONS</small></span></Link>;
 }
 
 export function SiteHeader() {
@@ -11,7 +11,7 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="container footer-main"><div><Logo /><p>Technology | Commerce | Innovation</p><p>One Platform. Multiple Solutions.</p></div><div><h2>Explore</h2><div className="footer-links"><Link href="/services">Services</Link><Link href="/solutions">Solutions</Link><Link href="/whatsapp-solutions">WhatsApp solutions</Link><Link href="/brands">Our brands</Link><Link href="/about">About us</Link><Link href="/contact">Contact</Link></div></div><div><h2>Get in touch</h2><address>{contact.location}<br /><a href={`mailto:${contact.email}`}>{contact.email}</a><br /><a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">WhatsApp: {contact.whatsappDisplay}</a></address></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} NRE TechOne Solutions. All rights reserved.</span><span>NRE Infusion Technology · NR Enterprises · NRETech1</span></div></footer>;
+  return <footer className="site-footer"><div className="container footer-main"><div><Logo /><p>Technology | Commerce | Innovation</p><p>One Platform. Multiple Solutions.</p></div><div><h2>Explore</h2><div className="footer-links"><Link href="/services">Services</Link><Link href="/solutions">Solutions</Link><Link href="/whatsapp-solutions">WhatsApp solutions</Link><Link href="/brands">Our brands</Link><Link href="/about">About us</Link><Link href="/contact">Contact</Link></div></div><div><h2>Get in touch</h2><address>{contact.location}<br /><a href={`mailto:${contact.email}`}>{contact.email}</a></address></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} NRE TechOne Solutions. All rights reserved.</span><span>NRE Infusion Technology · NR Enterprises · NRETech1</span></div></footer>;
 }
 
 export function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {

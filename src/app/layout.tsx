@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "NRE TechOne Solutions | Technology, Commerce & Innovation", template: "%s | NRE TechOne Solutions" },
-  description: "NRE TechOne Solutions provides website and app development, digital marketing, data analytics, business strategy, startup support and e-commerce solutions from Bhopal, India.",
+  description: "NRE TechOne Solutions provides website and app development, digital marketing, data analytics, business strategy, startup support and e-commerce solutions from Wyoming, USA.",
   openGraph: { title: "NRE TechOne Solutions", description: "One Platform. Multiple Solutions.", type: "website" },
 };
 
