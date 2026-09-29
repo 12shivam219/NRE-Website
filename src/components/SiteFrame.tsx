@@ -1,13 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import { contact, nav } from "@/lib/site";
+import { BrandMark } from "@/components/BrandMark";
 
-function Logo() {
-  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><span className="brand-mark"><Image src="/assets/nre-client-logo.webp" alt="" width={80} height={80} priority /></span><span className="brand-name"><strong>NRE<span>.</span></strong><small>TECHONE SOLUTIONS</small></span></Link>;
+function Logo({ animated = false }: { animated?: boolean }) {
+  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><BrandMark animated={animated} /><span className="brand-name"><strong>NRE<span>.</span></strong><small>TECHONE SOLUTIONS</small></span></Link>;
 }
 
 export function SiteHeader() {
-  return <header className="site-header"><div className="container header-inner"><Logo /><nav className="desktop-nav" aria-label="Main navigation">{nav.map(item => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav><Link href="/contact" className="header-contact">Let&apos;s connect <span aria-hidden="true">↗</span></Link><details className="mobile-nav"><summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile navigation"><Link href="/">Home</Link>{nav.map(item => <Link href={item.href} key={item.href}>{item.label}</Link>)}<Link href="/contact">Contact</Link></nav></details></div></header>;
+  return <header className="site-header"><div className="container header-inner"><Logo animated /><nav className="desktop-nav" aria-label="Main navigation">{nav.map(item => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav><Link href="/contact" className="header-contact">Let&apos;s connect <span aria-hidden="true">↗</span></Link><details className="mobile-nav"><summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile navigation"><Link href="/">Home</Link>{nav.map(item => <Link href={item.href} key={item.href}>{item.label}</Link>)}<Link href="/contact">Contact</Link></nav></details></div></header>;
 }
 
 export function SiteFooter() {
