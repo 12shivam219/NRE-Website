@@ -2,8 +2,8 @@
 export const images = {
   hero: "/assets/team-collaboration.f31a502e.webp",
   about: "/assets/mobile-design-session.5fa983f6.webp",
-  logo: "/assets/nre-logo-square.f2c0982f.webp",
-  logoPreview: "/assets/nre-client-logo.40665e53.webp",
+  logo: "/assets/nre-client-original.d935ad5c.jpeg",
+  logoPreview: "/assets/nre-client-original.d935ad5c.jpeg",
 } as const;
 
 export const imageSizes = {
@@ -13,8 +13,8 @@ export const imageSizes = {
   serviceExplorer: "(max-width: 650px) calc(100vw - 38px), (max-width: 900px) calc(100vw - 50px), (max-width: 1100px) calc(100vw - 300px), (max-width: 1360px) calc(72vw - 59.04px), 920.16px",
   appCard: "(max-width: 650px) 186.6px, (max-width: 900px) 146.6px, 166.6px",
   appExplorer: "(max-width: 900px) 286.6px, 303.2px",
-  logo: "(max-width: 650px) 52px, 64px",
-  logoPreview: "(max-width: 900px) 150px, 180px",
+  logo: "(max-width: 650px) 78px, 96px",
+  logoPreview: "(max-width: 900px) 225px, 270px",
 } as const;
 
 export const heroBlurDataURL = "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJZACdADSCPVWkjwAAP7YSHwqYJD2NhJgDn8XYylYdwbi+uzDeO5yD8IhDBfgm90I19srPWRJzkWJAmJ8MGCxhEPw0I1lYRSjDWLTwgKAAA==";
