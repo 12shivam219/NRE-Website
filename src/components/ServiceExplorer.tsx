@@ -2,6 +2,7 @@
 
 import { useState, type KeyboardEvent } from "react";
 import Image from "next/image";
+import { imageSizes } from "@/lib/images";
 import Link from "next/link";
 import { coreServices } from "@/lib/site";
 import { serviceVisuals } from "@/lib/serviceVisuals";
@@ -31,8 +32,8 @@ export function ServiceExplorer() {
           {coreServices.map((item, index) => <button key={item.slug} type="button" id={`service-tab-${index}`} role="tab" aria-selected={selected === index} aria-controls="service-explorer-panel" tabIndex={selected === index ? 0 : -1} onClick={() => setSelected(index)} onKeyDown={event => handleKeys(event, index)}><span>{item.number}</span><strong>{item.title}</strong><b aria-hidden="true">↗</b></button>)}
         </div>
         <div id="service-explorer-panel" className="service-explorer-panel" role="tabpanel" aria-labelledby={`service-tab-${selected}`} tabIndex={0}>
-          <div className="service-explorer-scene" key={visual.slug}>
-            <Image src={visual.image} alt={visual.alt} fill sizes="(max-width: 900px) 100vw, 65vw" />
+          <div className={`service-explorer-scene${visual.slug === "app-development" ? " app-scene" : ""}`} key={visual.slug}>
+            <Image src={visual.image} alt={visual.alt} fill sizes={visual.slug === "app-development" ? imageSizes.appExplorer : imageSizes.serviceExplorer} className={visual.slug === "app-development" ? "app-photo" : undefined} />
             <div className="service-photo-credit">Illustrative photo · <a href={visual.source} target="_blank" rel="noopener noreferrer">{visual.credit} / Unsplash ↗</a></div>
             <div className="example-workflow"><div className="example-workflow-top"><span className="workflow-status" aria-hidden="true" /> EXAMPLE WORKFLOW</div><strong>{service.title}</strong><ol>{visual.steps.map((step, index) => <li key={step}><span>0{index + 1}</span>{step}</li>)}</ol><div className="example-progress" aria-hidden="true"><span /></div></div>
           </div>

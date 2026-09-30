@@ -98,6 +98,26 @@
       "cls": 0,
       "transferBytes": 337971,
       "warnings": []
+    },
+    {
+      "stage": "images",
+      "run": 1,
+      "performance": 96.0,
+      "lcpMs": 2762.94,
+      "tbtMs": 89,
+      "cls": 0,
+      "transferBytes": 309883,
+      "warnings": []
+    },
+    {
+      "stage": "images",
+      "run": 2,
+      "performance": 96.0,
+      "lcpMs": 2731.2760000000003,
+      "tbtMs": 55,
+      "cls": 0,
+      "transferBytes": 309883,
+      "warnings": []
     }
   ]
 }

@@ -47,3 +47,8 @@
 @media(max-width:900px){.logo-motion-review{gap:35px}.logo-concept-grid{grid-template-columns:1fr}.logo-concept-art{min-height:240px}.logo-review-mark .brand-mark{width:150px;height:150px}}
 @media(max-width:650px){.logo-motion-review{grid-template-columns:1fr;padding-block:60px}.logo-review-stage{min-height:300px}}
 @media(prefers-reduced-motion:reduce){.brand-mark,.logo-concept-art img{transition:none}.brand-mark-animated .brand-ring circle,.brand-mark-animated .brand-emblem-art,.brand-mark-animated .brand-shine:after{animation:none!important}.brand-emblem-art{opacity:1;transform:none}.brand-shine{display:none}.brand:hover .brand-mark,.brand:focus-visible .brand-mark,.logo-review-mark:hover .brand-mark,.logo-review-mark:focus-visible .brand-mark{transform:none}}
+
+/* Preserve the whole phone in this portrait source instead of cropping it to landscape. */
+.home-story-image img.app-photo,.service-explorer-scene>img.app-photo{object-fit:contain}
+.service-explorer-scene>img.app-photo{object-position:15% center}
+@media(max-width:650px){.app-scene{padding-top:430px}.app-scene>img.app-photo{height:430px!important;object-position:center}.app-scene .example-workflow{position:relative;right:auto;bottom:auto;width:auto;margin:14px;z-index:2}}
