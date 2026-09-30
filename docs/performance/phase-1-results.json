@@ -118,6 +118,28 @@
       "cls": 0,
       "transferBytes": 309883,
       "warnings": []
+    },
+    {
+      "stage": "loading",
+      "run": 1,
+      "performance": 97.0,
+      "lcpMs": 2675.2889999999998,
+      "tbtMs": 30.5,
+      "cls": 0,
+      "transferBytes": 309962,
+      "warnings": [],
+      "fetchTime": "2026-09-30T23:16:29.941Z"
+    },
+    {
+      "stage": "loading",
+      "run": 2,
+      "performance": 97.0,
+      "lcpMs": 2675.7530000000006,
+      "tbtMs": 31.5,
+      "cls": 0,
+      "transferBytes": 309962,
+      "warnings": [],
+      "fetchTime": "2026-09-30T23:16:40.603Z"
     }
   ]
 }

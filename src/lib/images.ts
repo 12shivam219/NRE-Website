@@ -1,9 +1,9 @@
 // Layout widths mirror the container and grid breakpoints in globals.css.
 export const images = {
-  hero: "/assets/team-collaboration.webp",
-  about: "/assets/mobile-design-session.webp",
+  hero: "/assets/team-collaboration.f31a502e.webp",
+  about: "/assets/mobile-design-session.5fa983f6.webp",
   logo: "/assets/nre-logo-square.f2c0982f.webp",
-  logoPreview: "/assets/nre-client-logo.webp",
+  logoPreview: "/assets/nre-client-logo.40665e53.webp",
 } as const;
 
 export const imageSizes = {

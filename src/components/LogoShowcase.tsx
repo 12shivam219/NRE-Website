@@ -5,9 +5,9 @@ import Image from "next/image";
 import { BrandMark } from "@/components/BrandMark";
 
 const concepts = [
-  { file: "refined-emblem", name: "01 / Refined emblem", text: "A clean gold ring and custom NRE lettering. Closest to the existing identity, with simpler shapes for small screens." },
-  { file: "modern-monogram", name: "02 / Modern monogram", text: "A geometric frame and connected lettering. A compact technology identity that also works as an app icon." },
-  { file: "connected-pillars", name: "03 / Connected pillars", text: "Three connected arcs represent Technology, Commerce and Innovation around the NRE core." },
+  { file: "refined-emblem.9eb379f0", name: "01 / Refined emblem", text: "A clean gold ring and custom NRE lettering. Closest to the existing identity, with simpler shapes for small screens." },
+  { file: "modern-monogram.4b725cfe", name: "02 / Modern monogram", text: "A geometric frame and connected lettering. A compact technology identity that also works as an app icon." },
+  { file: "connected-pillars.b0b177b3", name: "03 / Connected pillars", text: "Three connected arcs represent Technology, Commerce and Innovation around the NRE core." },
 ];
 
 export function LogoShowcase() {
