@@ -3,7 +3,7 @@ import { contact, nav } from "@/lib/site";
 import { BrandMark } from "@/components/BrandMark";
 
 function Logo({ animated = false }: { animated?: boolean }) {
-  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><BrandMark animated={animated} priority={animated} /><span className="brand-name"><strong>NRE<span>.</span></strong><small>TECHONE SOLUTIONS</small></span></Link>;
+  return <Link href="/" className="brand" aria-label="NRE TechOne Solutions home"><BrandMark animated={animated} priority={animated} /><span className="brand-name"><strong>NRE TechOne Solutions</strong></span></Link>;
 }
 
 export function SiteHeader() {
