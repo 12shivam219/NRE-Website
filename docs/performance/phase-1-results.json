@@ -1,0 +1,145 @@
+{
+  "baselineCommit": "1d8b8dad322a790c1ac2a67c8838620c4d970202",
+  "environment": "Local next start production build; not Netlify; Chrome 131; Lighthouse 12.8.2",
+  "settings": {
+    "output": [
+      "json"
+    ],
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "cli",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance"
+    ],
+    "skipAudits": null
+  },
+  "runs": [
+    {
+      "stage": "baseline",
+      "run": 1,
+      "performance": 87.0,
+      "lcpMs": 2373.348,
+      "tbtMs": 43,
+      "cls": 0.020471050241017915,
+      "transferBytes": 337948,
+      "warnings": []
+    },
+    {
+      "stage": "baseline",
+      "run": 2,
+      "performance": 79.0,
+      "lcpMs": 2686.07625,
+      "tbtMs": 226.78475000000003,
+      "cls": 0.10391983445501031,
+      "transferBytes": 337945,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "stage": "fonts",
+      "run": 1,
+      "performance": 95.0,
+      "lcpMs": 2826.2112500000003,
+      "tbtMs": 66,
+      "cls": 0,
+      "transferBytes": 337971,
+      "warnings": []
+    },
+    {
+      "stage": "fonts",
+      "run": 2,
+      "performance": 97.0,
+      "lcpMs": 2677.6185,
+      "tbtMs": 57,
+      "cls": 0,
+      "transferBytes": 337971,
+      "warnings": []
+    },
+    {
+      "stage": "images",
+      "run": 1,
+      "performance": 96.0,
+      "lcpMs": 2762.94,
+      "tbtMs": 89,
+      "cls": 0,
+      "transferBytes": 309883,
+      "warnings": []
+    },
+    {
+      "stage": "images",
+      "run": 2,
+      "performance": 96.0,
+      "lcpMs": 2731.2760000000003,
+      "tbtMs": 55,
+      "cls": 0,
+      "transferBytes": 309883,
+      "warnings": []
+    },
+    {
+      "stage": "loading",
+      "run": 1,
+      "performance": 97.0,
+      "lcpMs": 2675.2889999999998,
+      "tbtMs": 30.5,
+      "cls": 0,
+      "transferBytes": 309962,
+      "warnings": [],
+      "fetchTime": "2026-09-30T23:16:29.941Z"
+    },
+    {
+      "stage": "loading",
+      "run": 2,
+      "performance": 97.0,
+      "lcpMs": 2675.7530000000006,
+      "tbtMs": 31.5,
+      "cls": 0,
+      "transferBytes": 309962,
+      "warnings": [],
+      "fetchTime": "2026-09-30T23:16:40.603Z"
+    }
+  ]
+}

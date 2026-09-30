@@ -1,7 +1,7 @@
 export const serviceVisuals = [
   {
     slug: "digital-marketing",
-    image: "/assets/services/digital-marketing.webp",
+    image: "/assets/services/digital-marketing.91369696.webp",
     alt: "A person reviewing social media analytics on a smartphone",
     credit: "Swello",
     source: "https://unsplash.com/photos/checking-data-analytics-on-a-phone-YRKUwWH_zL8",
@@ -10,7 +10,7 @@ export const serviceVisuals = [
   },
   {
     slug: "data-analytics",
-    image: "/assets/services/data-analytics.webp",
+    image: "/assets/services/data-analytics.0ad942f8.webp",
     alt: "Two colleagues discussing information on a laptop",
     credit: "Vitaly Gariev",
     source: "https://unsplash.com/photos/two-colleagues-discussing-data-on-a-laptop-screen-1FzEg5g7vt0",
@@ -19,7 +19,7 @@ export const serviceVisuals = [
   },
   {
     slug: "business-strategy",
-    image: "/assets/services/business-strategy.webp",
+    image: "/assets/services/business-strategy.334766d3.webp",
     alt: "Business colleagues planning together at a laptop",
     credit: "Vitaly Gariev",
     source: "https://unsplash.com/photos/two-men-looking-at-a-laptop-together-MSTL7-5avQo",
@@ -28,7 +28,7 @@ export const serviceVisuals = [
   },
   {
     slug: "website-development",
-    image: "/assets/services/website-development.webp",
+    image: "/assets/services/website-development.92709a97.webp",
     alt: "Developer writing code on a laptop",
     credit: "Alicia Christin Gerald",
     source: "https://unsplash.com/photos/developer-typing-code-on-a-laptop-screen-xaWYIbNIOdw",
@@ -37,7 +37,7 @@ export const serviceVisuals = [
   },
   {
     slug: "app-development",
-    image: "/assets/services/app-development.webp",
+    image: "/assets/services/app-development.8263d561.webp",
     alt: "A person testing a mobile application beside a code editor",
     credit: "Fahim Muntashir",
     source: "https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-laptop-v-FOvoL3onk",
@@ -46,7 +46,7 @@ export const serviceVisuals = [
   },
   {
     slug: "startup-innovation",
-    image: "/assets/services/startup-innovation.webp",
+    image: "/assets/services/startup-innovation.cbc1c49d.webp",
     alt: "A team brainstorming with notes on a glass wall",
     credit: "Vitaly Gariev",
     source: "https://unsplash.com/photos/team-brainstorming-with-colorful-sticky-notes-on-glass-euNzbqwIIUI",
@@ -55,7 +55,7 @@ export const serviceVisuals = [
   },
   {
     slug: "ecommerce",
-    image: "/assets/services/ecommerce.webp",
+    image: "/assets/services/ecommerce.9f3b453d.webp",
     alt: "Small business owner checking products and orders beside a laptop",
     credit: "Rifki Kurniawan",
     source: "https://unsplash.com/photos/woman-checking-package-with-phone-near-laptop-and-boxes-k63Or81F8-M",
