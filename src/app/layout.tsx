@@ -22,9 +22,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: { default: "NRE TechOne Solutions | Technology, Commerce & Innovation", template: "%s | NRE TechOne Solutions" },
-  description: "NRE TechOne Solutions provides website and app development, digital marketing, data analytics, business strategy, startup support and e-commerce solutions from Wyoming, USA.",
-  openGraph: { title: "NRE TechOne Solutions", description: "One Platform. Multiple Solutions.", type: "website" },
+  title: { default: "NRE TechOne | Technology | Commerce | Innovation", template: "%s | NRE TechOne" },
+  description: "NRE TechOne is a global technology and business solutions brand serving clients across the United States, India, and international markets.",
+  openGraph: { title: "NRE TechOne", description: "NRE TechOne is a global technology and business solutions brand serving clients across the United States, India, and international markets.", type: "website" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

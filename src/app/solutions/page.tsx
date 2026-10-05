@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactBand, PageIntro } from "@/components/SiteFrame";
 
-export const metadata: Metadata = { title: "Business & Technology Solutions", description: "NRE TechOne Solutions combines technology, strategy, data, marketing and commerce around your business requirement." };
+export const metadata: Metadata = { title: "Business & Technology Solutions", description: "NRE TechOne combines technology, strategy, data, marketing and commerce around your business requirement." };
 
 const solutions = [
   { n: "01", title: "Digital transformation", body: "Identify where connected digital workflows can improve operations, customer experiences and decisions." },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactBand, PageIntro } from "@/components/SiteFrame";
 
-export const metadata: Metadata = { title: "WhatsApp Business & Automation", description: "Explore WhatsApp Business messaging, API integration, chatbots, automation, customer engagement and industry workflows with NRE TechOne Solutions." };
+export const metadata: Metadata = { title: "WhatsApp Business & Automation", description: "Explore WhatsApp Business messaging, API integration, chatbots, automation, customer engagement and industry workflows with NRE TechOne." };
 
 const capabilities = [
   { n: "01", title: "Business messaging", body: "Plan campaigns, announcements and updates for customers who have chosen to hear from your business." },

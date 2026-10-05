@@ -1,6 +1,9 @@
 export const contact = {
   email: "info@nretechone.com",
-  location: "Wyoming, WY, USA",
+  locations: [
+    { flag: "🇺🇸", entity: "NRE TechOne LLC", location: "New Jersey, NJ, USA" },
+    { flag: "🇮🇳", entity: "NRE TechOne Solutions", location: "Bhopal, Madhya Pradesh, India" },
+  ],
 };
 
 export const nav = [
@@ -24,7 +27,7 @@ export const coreServices = [
 export const brands = [
   { number: "01", name: "NRE Infusion Technology", focus: "Technology & digital solutions", line: "It's time to begin...", description: "Technology and digital initiatives that help businesses begin and advance their digital journey." },
   { number: "02", name: "NR Enterprises", focus: "Commerce & business opportunities", line: "It's time to create...", description: "Commerce and entrepreneurship initiatives focused on creating new business opportunities." },
-  { number: "03", name: "NRETech1", focus: "Technology & innovation", line: "It's time to make it!", description: "Digital initiatives that turn technology ideas into practical experiences." },
+  { number: "03", name: "NRE TechOne Solutions", focus: "Technology & Innovation", line: "It's time to make it!", description: "Digital initiatives that turn technology ideas into practical experiences." },
 ];
 
 export const approach = [

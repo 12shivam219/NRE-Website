@@ -4,7 +4,7 @@ import { ContactBand, PageIntro } from "@/components/SiteFrame";
 import { ServiceExplorer } from "@/components/ServiceExplorer";
 import { coreServices } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Technology & Digital Services", description: "Explore NRE TechOne Solutions services in digital marketing, analytics, strategy, websites, apps, startup support, e-commerce and business messaging." };
+export const metadata: Metadata = { title: "Technology & Digital Services", description: "Explore NRE TechOne services in digital marketing, analytics, strategy, websites, apps, startup support, e-commerce and business messaging." };
 
 export default function Services() {
   return <><PageIntro eyebrow="OUR SERVICES" title="Technology, strategy and digital services under one roof." description="Choose the capability you need, or combine several into a solution that fits your business requirements." />
